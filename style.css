@@ -1,0 +1,183 @@
+/* style.css */
+
+/* Global Styles */
+@import url(https://fonts.googleapis.com/css?family=Merienda:300,regular,500,600,700,800,900);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 1%;
+  }
+  
+  body {
+    font-family: "Merienda", cursive;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(images/backgroung.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    font-optical-sizing: auto;
+    font-weight:400 ;
+    font-style:normal;
+  }
+  
+  header {
+    background-color:#62b5c5;
+    color: #081f5c;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0px;
+    background-color: #d0e3ff;
+    box-shadow: 0 0 10px rgba(192, 46, 46, 0.1);
+  }
+  
+  /* Search Form Styles */
+  
+  #search-form {
+    margin-bottom: 20px;
+  }
+  
+  #city-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color:#d0e3ff;
+  }
+  
+  #search-form button[type="submit"] {
+    background-color:#62b5c5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #search-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Weather Data Styles */
+  
+  #weather-data {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:#d0e3ff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #weather-data h2 {
+    margin-top: 0;
+  }
+  
+  /* Forecast List Styles */
+  
+  #forecast-list {
+    list-style:square;
+    padding: 0;
+    margin: 0;
+    background-color: #d0e3ff;
+  }
+  
+  #forecast-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #forecast-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Loading Spinner Styles */
+  
+  #loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #333;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+
+  .weather-icon {
+    width: 100px;
+    margin-top: 30px;
+  }
+  .weather h2{
+    font-size: 90px;
+    font-weight: 500;
+  }
+  .weather h3{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+   .weather{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+   }
+  
+   .col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+   }
+
+   .col img{
+    width: 40px;
+    margin-right: 10px;
+   }
+
+.humidity, .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Reports</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button type="submit">Search</button>
+        </form>
+        <section id="weather-data">
+            <img src="images/weathericonss/cloudy-day.png" class="weather-icon" alt="weather">
+            <h2 id="city-name">Nairobi</h2>
+            <h3 id="temperature">20°C</h3>
+            <div class="col">
+                <img src="images/weathericonss/humidity.png">
+                <div>
+                    <p class="humidity">50%</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/weathericonss/wind.png">
+                <div>
+                    <p class="wind speed">50ms/m</p>
+                </div>
+            </div>
+        </section>
+        <ul id="forecast-list"></ul>
+        <div id="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </main>
+    <script src="option.js"></script>
+</body>
+</html>
