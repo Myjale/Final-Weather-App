@@ -140,6 +140,7 @@
     font-weight: 400;
     margin-top: -10px;
   }
+
    .weather{
     display: flex;
     align-items: center;
@@ -147,6 +148,7 @@
     padding: 0 20px;
     margin-top: 50px;
    }
+
   
    .col{
     display: flex;
@@ -154,10 +156,12 @@
     text-align: left;
    }
 
+
    .col img{
     width: 40px;
     margin-right: 10px;
    }
+
 
 .humidity, .wind{
   font-size: 28px;
