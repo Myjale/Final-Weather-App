@@ -27,6 +27,7 @@ const weathericons = {
 };
 
 
+
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const city = cityInput.value.trim();
@@ -39,6 +40,7 @@ searchForm.addEventListener('submit', (e) => {
   
 });
 
+
 function fetchWeatherData(city) {
   loadingSpinner.style.display = 'block';
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
@@ -50,6 +52,7 @@ function fetchWeatherData(city) {
     .then(data => displayWeatherForecast(data))
     .catch(error => handleError(error));
 }
+
 
 
 function displayWeatherData(data) {
@@ -71,6 +74,7 @@ function displayWeatherData(data) {
 
   loadingSpinner.style.display = 'none';
 }
+
 
 function displayWeatherForecast(data) {
   const dailyForecast = {};
