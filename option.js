@@ -5,7 +5,7 @@ const weatherDataSection = document.getElementById('weather-data');
 const forecastList = document.getElementById('forecast-list');
 const loadingSpinner = document.getElementById('loading-spinner');
 
-const weatherIcons = {
+const weathericons = {
   '01d': 'clear-day.png',
   '01n': 'clear-night.png',
   '02d': 'partly-cloudy-day.png',
@@ -26,6 +26,8 @@ const weatherIcons = {
   '50n': 'mist-night.png'
 };
 
+
+
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const city = cityInput.value.trim();
@@ -35,7 +37,9 @@ searchForm.addEventListener('submit', (e) => {
   } else {
     handleError('Please enter a valid city name');
   }
+  
 });
+
 
 function fetchWeatherData(city) {
   loadingSpinner.style.display = 'block';
@@ -49,12 +53,15 @@ function fetchWeatherData(city) {
     .catch(error => handleError(error));
 }
 
+
+
 function displayWeatherData(data) {
   const {
     main: { temp, humidity },
     wind: { speed },
     weather: [{ description, icon }]
   } = data;
+  
 
   document.getElementById('city-name').textContent = data.name;
   document.getElementById('temperature').textContent = `${temp}°C`;
@@ -67,6 +74,7 @@ function displayWeatherData(data) {
 
   loadingSpinner.style.display = 'none';
 }
+
 
 function displayWeatherForecast(data) {
   const dailyForecast = {};
