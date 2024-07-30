@@ -29,6 +29,7 @@ const weatherIcons = {
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const city = cityInput.value.trim();
+
   if (city) {
     fetchWeatherData(city);
   } else {
