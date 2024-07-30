@@ -102,10 +102,12 @@
     padding: 10px;
     border-bottom: 1px solid #ddd;
   }
+
   
   #forecast-list li:last-child {
     border-bottom: none;
   }
+
   
   /* Loading Spinner Styles */
   
@@ -116,6 +118,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   
   .spinner {
     width: 40px;
@@ -131,10 +134,12 @@
     width: 100px;
     margin-top: 30px;
   }
+
   .weather h2{
     font-size: 90px;
     font-weight: 500;
   }
+
   .weather h3{
     font-size: 45px;
     font-weight: 400;
